@@ -195,56 +195,23 @@ const App = () => {
                           
                           <h3>Our Suggestion</h3>
                           <div
-                            style={{
-                              display: 'flex',
-                              justifyContent: 'center', // Centers the box horizontally
-                              alignItems: 'center', // Centers the box vertically (if the parent container has height)
-                              width: '700px',
-                              minHeight: '50px',
-                              backgroundColor: '#8338ec',
-                              color: '#fff',
-                              borderRadius: '5px',
-                              padding: '10px',
-                              margin: '0 auto', // Centers the box horizontally with automatic left and right margins
-                              boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
-                              gap: '5px',
-                            }}>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            style={styles.suggestionContainer}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/57zLxX8dAHoZ2G8x7" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               Koey Teow Kerang Taiping Famous
                               <StarRating rating={5} />
                             </a></div>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/KkdHKW33BZuMNscg8" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               Sany - Lis Char Kuey Teow <StarRating rating={4} />
                             </a>
@@ -285,58 +252,27 @@ const App = () => {
                           basic garnishes with other options like pig intestine, prawn balls, char siew (roast pork), 
                           duck blood, etc. Additional sambal chili is usually provided in a spoon for those who 
                           want a further umami spicy boost to their Hokkien mee. </p>
+
+                          <h3>Our Suggestion</h3>
                           
                           <div
-                            style={{
-                              display: 'flex',
-                              justifyContent: 'center', // Centers the box horizontally
-                              alignItems: 'center', // Centers the box vertically (if the parent container has height)
-                              width: '700px',
-                              minHeight: '50px',
-                              backgroundColor: '#8338ec',
-                              color: '#fff',
-                              borderRadius: '5px',
-                              padding: '10px',
-                              margin: '0 auto', // Centers the box horizontally with automatic left and right margins
-                              boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
-                              gap: '5px',
-                            }}>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            style={styles.suggestionContainer}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/sTfe63PGrbFDVaVq8" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               Aimi Lim Halal Hokkien Mee
                               <StarRating rating={5} />
                             </a></div>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/UqgxR2s63qRm367x5" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               木通福建面 Hokkien Mee<StarRating rating={4} />
                             </a>
@@ -373,58 +309,27 @@ const App = () => {
                           amount of sauce, and this is known 'banjir' (flooding) or you can ask for it to be served 
                           separately. Either way this helps open up a palette of flavours thus giving you a happy 
                           eating experience.</p>
+
+                          <h3>Our Suggestion</h3>
                           
                           <div
-                            style={{
-                              display: 'flex',
-                              justifyContent: 'center', // Centers the box horizontally
-                              alignItems: 'center', // Centers the box vertically (if the parent container has height)
-                              width: '700px',
-                              minHeight: '50px',
-                              backgroundColor: '#8338ec',
-                              color: '#fff',
-                              borderRadius: '5px',
-                              padding: '10px',
-                              margin: '0 auto', // Centers the box horizontally with automatic left and right margins
-                              boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
-                              gap: '5px',
-                            }}>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            style={styles.suggestionContainer}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/W3YDucN2ZhwtyND58" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               Nasi Kandar Sulaiman
                               <StarRating rating={5} />
                             </a></div>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/BqBTSCpYoEF1RwkX9" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               Deens Maju Nasi Kandar <StarRating rating={5} />
                             </a>
@@ -465,57 +370,26 @@ const App = () => {
                           tofu. Pasembur’s unique taste comes from the spicy peanut sauce, which is made from 
                           ground peanuts, chillies, and tamarind.</p>
                           
+                          <h3>Our Suggestion</h3>
+                          
                           <div
-                            style={{
-                              display: 'flex',
-                              justifyContent: 'center', // Centers the box horizontally
-                              alignItems: 'center', // Centers the box vertically (if the parent container has height)
-                              width: '700px',
-                              minHeight: '50px',
-                              backgroundColor: '#8338ec',
-                              color: '#fff',
-                              borderRadius: '5px',
-                              padding: '10px',
-                              margin: '0 auto', // Centers the box horizontally with automatic left and right margins
-                              boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
-                              gap: '5px',
-                            }}>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            style={styles.suggestionContainer}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/ri7mStNDmYPF7TFi9" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               GANI Famous Pasembur
                               <StarRating rating={4} />
                             </a></div>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/moZkCoWJmBxZfern7" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               Pasembur King (Hussain) <StarRating rating={5} />
                             </a>
@@ -554,56 +428,23 @@ const App = () => {
 
                           <h3>Our Suggestion</h3>
                           <div
-                            style={{
-                              display: 'flex',
-                              justifyContent: 'center', // Centers the box horizontally
-                              alignItems: 'center', // Centers the box vertically (if the parent container has height)
-                              width: '700px',
-                              minHeight: '50px',
-                              backgroundColor: '#8338ec',
-                              color: '#fff',
-                              borderRadius: '5px',
-                              padding: '10px',
-                              margin: '0 auto', // Centers the box horizontally with automatic left and right margins
-                              boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
-                              gap: '5px',
-                            }}>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            style={styles.suggestionContainer}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/pAycS1nKZAaaiWEJA" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               Laksa Kuah Pekat
                               <StarRating rating={4} />
                             </a></div>
-                            <div style={{
-                              width: '100%',
-                              maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
-                              height: 'auto',
-                              backgroundColor: '#fff',
-                              padding: '20px', // Adjust padding for better spacing
-                              margin: '30px auto', // Center the container and provide vertical spacing
-                              boxSizing: 'border-box', // Ensure padding does not affect width calculations
-                              borderRadius: '8px', // Optional rounded corners for a modern look
-                              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
-                            }}>
+                            <div style={styles.suggestionContainerPlace}>
                             <a 
                               href="https://maps.app.goo.gl/eGfdZPj45DZ93P2E8" 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              style={{ textDecoration: 'none', color: '#000', display: 'block', marginBottom: '10px' }}
+                              style={styles.suggestionText}
                             >
                               Laksa Sungai Nibong <StarRating rating={5} />
                             </a>
@@ -830,22 +671,10 @@ const App = () => {
               alt="Explore More"
             />
             <div
-              style={{
-                position: 'absolute',
-                bottom: '20px',
-                left: '20px',
-                color: '#fff',
-                fontSize: '1rem',  // Use relative units for better responsiveness
-                fontFamily: '"Montserrat", sans-serif',
-                fontWeight: 'bold',
-                textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)', // Text shadow for readability
-                transition: 'transform 0.3s, filter 0.3s',
-              }}
+              style={styles.hotelText}
             >
               Ascott Gurney Penang
-              <div style={{ marginTop: '5px' }}>
-                <StarRating rating={5} />
-              </div>
+              <StarRating rating={5} />
             </div>
           </div>
 
@@ -866,22 +695,11 @@ const App = () => {
               alt="Explore More"
             />
             <div
-              style={{
-                position: 'absolute',
-                bottom: '20px',
-                left: '20px',
-                color: '#fff',
-                fontSize: '1rem',  // Use relative units for better responsiveness
-                fontFamily: '"Montserrat", sans-serif',
-                fontWeight: 'bold',
-                textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)', // Text shadow for readability
-                transition: 'transform 0.3s, filter 0.3s',
-              }}
+              style={styles.hotelText}
             >
               Lexis Suites Penang
-              <div style={{ marginTop: '5px' }}>
-                <StarRating rating={4} />
-              </div>
+              <StarRating rating={4} />
+             
             </div>
           </div>
 
@@ -902,23 +720,10 @@ const App = () => {
               alt="Explore More"
             />
             <div
-              style={{
-                position: 'absolute',
-                bottom: '20px',
-                left: '20px',
-                color: '#fff',
-                fontSize: '1rem',  // Use relative units for better responsiveness
-                fontFamily: '"Montserrat", sans-serif',
-                fontWeight: 'bold',
-                textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)', // Text shadow for readability
-                transition: 'transform 0.3s, filter 0.3s',
-              }}
+              style={styles.hotelText}
             >
-              
               Eastin Hotel Penang
-              <div style={{ marginTop: '5px' }}>
-                <StarRating rating={4} />
-              </div>
+              <StarRating rating={4} />
             </div>
           </div>
 
@@ -939,32 +744,15 @@ const App = () => {
               alt="Explore More"
             />
             <div
-              style={{
-                position: 'absolute',
-                bottom: '20px',
-                left: '20px',
-                color: '#fff',
-                fontSize: '1rem',  // Use relative units for better responsiveness
-                fontFamily: '"Montserrat", sans-serif',
-                fontWeight: 'bold',
-                textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)', // Text shadow for readability
-                transition: 'transform 0.3s, filter 0.3s',
-                
-              }}
+              style={styles.hotelText}
             >
               Eastern & Oriental 
-              <div style={{ marginTop: '5px' }}>
-                <StarRating rating={5} />
-              </div>
+              <StarRating rating={5} />
             </div>
           </div>
 
           <div
-            style={{
-              ...styles.imageContainer3,
-              position: 'relative',
-              justifyContent: 'center',
-            }}
+            style={styles.imageContainer3}
             onClick={() => (window.location.href = 'https://homptonhotel.com')}
           >
             <img
@@ -976,25 +764,13 @@ const App = () => {
               alt="Explore More"
             />
             <div
-              style={{
-                position: 'absolute',
-                bottom: '20px',
-                left: '20px',
-                color: '#fff',
-                fontSize: '1rem',  // Use relative units for better responsiveness
-                fontFamily: '"Montserrat", sans-serif',
-                fontWeight: 'bold',
-                textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)', // Text shadow for readability
-                transition: 'transform 0.3s, filter 0.3s',
-
-              }}
-            >            
+              style={styles.hotelText}
+            >
               Hompton Penang
-              <div style={{ marginTop: '5px' }}>
-                <StarRating rating={5} />
-              </div>
+              <StarRating rating={5} />
             </div>
           </div>
+
       </div>
 
       
@@ -1081,7 +857,7 @@ const getStyles = (isMobile) => ({
   },
   headerBar: {
     width: isMobile ? '100%' : 'calc(100% - 360px)', // Full width on mobile
-    height: '80px',             // Consistent height
+    height: isMobile ? '25px' : '80px',             // Consistent height
     position: 'fixed',          // Fixed to viewport
     top: isMobile ? '5px' : '10px',  // Reduced top space for mobile
     zIndex: 1000,               // Ensure it stays above other elements
@@ -1096,7 +872,7 @@ const getStyles = (isMobile) => ({
     boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)', // Subtle shadow for depth
   },
   headerIMG: {
-    width: isMobile ? '100px' : '150px',            // Conditional width based on mobile
+    width: isMobile ? '75px' : '150px',            // Conditional width based on mobile
     height: 'auto',
     marginTop: isMobile ? '10px' : '20px',          // Adjust marginTop for mobile
     marginBottom: isMobile ? '5px' : '10px',        // Adjust marginBottom for mobile
@@ -1117,7 +893,7 @@ const getStyles = (isMobile) => ({
     color: '#fb5607',
     fontWeight: 'bold',
     textShadow: '2px 2px 4px rgba(255, 229, 157, 0.5)',
-    fontSize: isMobile ? '12px' : '15px', // Smaller font size on mobile
+    fontSize: isMobile ? '7px' : '15px', // Smaller font size on mobile
     transition: 'color 0.3s',
     margin: 'auto',
   },
@@ -1146,18 +922,39 @@ const getStyles = (isMobile) => ({
   },
 
   imageContainer3: {
-    
     width: '100%',              // Allow full width for responsiveness
     height: 'auto',
     borderRadius: '15px',
     overflow: 'hidden',
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     cursor: 'pointer',
     transition: 'transform 0.3s ease',
+    position: 'relative',
+  },
+  hotelText: {
+    position: 'absolute',
+    bottom: isMobile ? '5px' : '20px', // Adjust bottom spacing for smaller screens
+    left: '50%',  // Adjust left spacing for smaller screens
+    color: '#fff',
+    fontSize: isMobile ? '8px' : '15px', // Use slightly larger font for readability
+    fontFamily: '"Montserrat", sans-serif',
+    fontWeight: 'bold',
+    textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)', // Keep the shadow for readability
+    transition: 'transform 0.3s, filter 0.3s',
+  
+    // Responsive alignment
+    whiteSpace: 'nowrap', // Prevent text wrapping
+    overflow: 'hidden',   // Hide overflow text
+    textAlign: 'center',    
+
+
+    transform: 'translateX(-50%)', // Adjust for centering
 
   },
+  
   image: {
     width: '100%',                // Ensure the image spans the full width of its container
     height: 'auto',               // Maintain aspect ratio
@@ -1178,7 +975,7 @@ const getStyles = (isMobile) => ({
     transition: 'opacity 1.0s ease',           // Smooth opacity transition
   },
   title: {
-    fontSize: isMobile ? '24px' : '30px',           // Smaller font size for mobile
+    fontSize: isMobile ? '24px' : '50px',           // Smaller font size for mobile
     fontFamily: '"Montserrat", sans-serif',
     textAlign: 'center',                            // Keep text centered on both mobile and desktop
     marginBottom: isMobile ? '10px' : '20px',       // Reduce bottom margin on mobile for better space usage
@@ -1187,7 +984,7 @@ const getStyles = (isMobile) => ({
     transition: 'font-size 0.3s ease, margin 0.3s ease', // Smooth transition for font size and margin
   },
   sectionTitle: {
-    fontSize: isMobile ? '30px' : '40px',           // Smaller font size for mobile
+    fontSize: isMobile ? '25px' : '40px',           // Smaller font size for mobile
     fontFamily: '"Montserrat", sans-serif',
     textAlign: isMobile ? 'center' : 'left',        // Center-align text on mobile, left-align on larger screens
     marginTop: isMobile ? '20px' : '50px',          // Reduce top margin on mobile
@@ -1235,7 +1032,7 @@ const getStyles = (isMobile) => ({
   },
   
   contentBackground: {
-    width: isMobile ? '140px' : '200px',          // Reduce width on mobile for a more compact layout
+    width: isMobile ? '60px' : '200px',          // Reduce width on mobile for a more compact layout
     height: 'auto',                               // Maintain auto height to adjust based on content
     backgroundColor: '#fff',                      // White background for content
     objectFit: 'cover',                           // Ensure image or content fits well within the container
@@ -1244,13 +1041,19 @@ const getStyles = (isMobile) => ({
     position: 'relative',                         // Ensure positioning relative for inner elements
   },
   contentBackground3: {
-    width: '100%',                                // Full width for responsive design
-    height: 'auto',                               // Height adjusts based on content
-    objectFit: 'cover',                           // Ensures content is covered within the container
-    borderRadius: isMobile ? '10px' : '15px',     // Adjust border radius for mobile devices
-    position: 'relative',                         // Keep relative positioning for inner elements
-    transition: 'transform 0.3s, filter 0.3s',     // Smooth transition for transformations and filters
+    width: isMobile ? '60px' : '200px', // Full width for responsive design
+    height: 'auto', // Height adjusts based on content
+    objectFit: 'cover', // Ensures content is covered within the container
+    borderRadius: isMobile ? '10px' : '15px', // Adjust border radius for mobile devices
+    position: 'relative', // Keep relative positioning for inner elements
+    transition: 'transform 0.3s, filter 0.3s', // Smooth transition for transformations and filters
+  
+    // Flexbox for alignment
+    display: 'flex',
+    justifyContent: 'center', // Center items horizontally
+    alignItems: 'flex-end', // Align items at the bottom
   },
+  
   
   
   
@@ -1279,6 +1082,52 @@ const getStyles = (isMobile) => ({
     margin: isMobile ? '10px' : '10px 20px', // Adjust margin on mobile
   },
 
+  suggestionContainer: {
+    display: 'flex',
+    justifyContent: 'center', // Centers the box horizontally
+    alignItems: 'center', // Centers the box vertically (if the parent container has height)
+    width: isMobile ? '300px': '700px',
+    height: isMobile ? '100px': 'auto',
+    backgroundColor: '#8338ec',
+    color: '#fff',
+    borderRadius: '5px',
+    padding: '10px',
+    margin: '0 auto', // Centers the box horizontally with automatic left and right margins
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
+    gap: '5px',
+
+  },
+
+  suggestionContainerPlace: {
+    width: '100%',
+    maxWidth: '400px', // Limit the width to prevent the container from becoming too wide on large screens
+    height: isMobile ? '50px' : 'auto', // Use dynamic height for mobile and auto for larger screens
+    backgroundColor: '#fff',
+    padding: isMobile ? '10px' : '20px', // Less padding on smaller screens
+    margin: '30px auto', // Center the container and provide vertical spacing
+    boxSizing: 'border-box', // Ensure padding does not affect width calculations
+    borderRadius: '8px', // Optional rounded corners for a modern look
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Add a subtle shadow for depth
+
+    // Flexbox for centering content
+    display: 'flex', 
+    justifyContent: 'center', // Center horizontally
+    alignItems: 'center',     // Center vertically
+    flexDirection: 'column',  // Stack the items vertically (can be changed based on layout)
+  },
+
+  suggestionText: {
+    fontSize: isMobile ? '10px' : '15px',
+    textDecoration: 'none',
+    color: '#000',
+    display: 'block', // This is fine for block-level elements
+    marginBottom: '10px',
+    
+    // Centering the text
+    textAlign: 'center', // Horizontally centers the text
+    margin: '0 auto', // Ensure the element is centered if it has a width
+  },
+
   heading: {
     color: '#000',
     fontSize: isMobile ? '16px' : '18px',    // Adjust heading font size for mobile
@@ -1287,7 +1136,7 @@ const getStyles = (isMobile) => ({
 
   text: {
     color: '#000',
-    fontSize: isMobile ? '16px' : '20px',    // Adjust text size for mobile
+    fontSize: isMobile ? '15px' : '20px',    // Adjust text size for mobile
     fontFamily: '"Montserrat", sans-serif',
     textAlign: 'center',  
     lineHeight: '1.5',
