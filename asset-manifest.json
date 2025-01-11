@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/CAT201_TravelJom/static/css/main.51c7d6a0.css",
+    "main.js": "/CAT201_TravelJom/static/js/main.297ba1bc.js",
+    "static/media/ESCAPEPENANG.png": "/CAT201_TravelJom/static/media/ESCAPEPENANG.2cb57e34b7f0dfaccb94.png",
+    "static/media/STREETART.png": "/CAT201_TravelJom/static/media/STREETART.f712a60b913edf5fe97e.png",
+    "static/media/PENANGHILL.png": "/CAT201_TravelJom/static/media/PENANGHILL.3bc85095ef53845ed374.png",
+    "static/media/1.png": "/CAT201_TravelJom/static/media/1.2dd22ce2da9200981cd0.png",
+    "static/media/KEKLOKSI.png": "/CAT201_TravelJom/static/media/KEKLOKSI.11fcd903abfb152f6fa4.png",
+    "static/media/BATUFERRINGHI.png": "/CAT201_TravelJom/static/media/BATUFERRINGHI.8efcdebd4f014bda0605.png",
+    "static/media/background5-01.jpg": "/CAT201_TravelJom/static/media/background5-01.df2c2cc2a36ddca4be26.jpg",
+    "static/media/background3-01.jpg": "/CAT201_TravelJom/static/media/background3-01.c16b3f8b96dfd22a3c21.jpg",
+    "static/media/nasikandar.jpg": "/CAT201_TravelJom/static/media/nasikandar.33512315ad3ea2e56916.jpg",
+    "static/media/laksa penang.jpg": "/CAT201_TravelJom/static/media/laksa penang.86ced74eac4b3fe75f9e.jpg",
+    "static/media/pasembur.jpg": "/CAT201_TravelJom/static/media/pasembur.caa08153ba28050af225.jpg",
+    "static/media/hokkien mee.jpg": "/CAT201_TravelJom/static/media/hokkien mee.30712a32fadb1627de9d.jpg",
+    "static/media/ascott.jpg": "/CAT201_TravelJom/static/media/ascott.f0b7b7bd8b9835756f44.jpg",
+    "static/media/char kuey teow.jpg": "/CAT201_TravelJom/static/media/char kuey teow.30398dbc2df6f88333eb.jpg",
+    "static/media/lexis.jpg": "/CAT201_TravelJom/static/media/lexis.7d10b2c0e94817daa23c.jpg",
+    "static/media/eno.jpg": "/CAT201_TravelJom/static/media/eno.f456258c84fa0f8e51f2.jpg",
+    "static/media/eastin.jpg": "/CAT201_TravelJom/static/media/eastin.b583fab16be4f748335c.jpg",
+    "static/media/hompton.jpg": "/CAT201_TravelJom/static/media/hompton.868f56a4aa237e1a8b6d.jpg",
+    "static/media/facebook-icon.png": "/CAT201_TravelJom/static/media/facebook-icon.790642551cd99bb66a7e.png",
+    "static/media/PenangFlag.png": "/CAT201_TravelJom/static/media/PenangFlag.85dd20abf67520a05117.png",
+    "static/media/HeaderLogo.png": "/CAT201_TravelJom/static/media/HeaderLogo.0c4673f1d817f983a0d1.png",
+    "static/media/instagram-icon.jpeg": "/CAT201_TravelJom/static/media/instagram-icon.1fafeb219d85ffcbc9d0.jpeg",
+    "index.html": "/CAT201_TravelJom/index.html",
+    "main.51c7d6a0.css.map": "/CAT201_TravelJom/static/css/main.51c7d6a0.css.map",
+    "main.297ba1bc.js.map": "/CAT201_TravelJom/static/js/main.297ba1bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51c7d6a0.css",
+    "static/js/main.297ba1bc.js"
+  ]
+}
