@@ -1,11 +1,10 @@
 {
   "files": {
     "main.css": "/CAT201_TravelJom/static/css/main.51c7d6a0.css",
-    "main.js": "/CAT201_TravelJom/static/js/main.297ba1bc.js",
+    "main.js": "/CAT201_TravelJom/static/js/main.762645cb.js",
     "static/media/ESCAPEPENANG.png": "/CAT201_TravelJom/static/media/ESCAPEPENANG.2cb57e34b7f0dfaccb94.png",
     "static/media/STREETART.png": "/CAT201_TravelJom/static/media/STREETART.f712a60b913edf5fe97e.png",
     "static/media/PENANGHILL.png": "/CAT201_TravelJom/static/media/PENANGHILL.3bc85095ef53845ed374.png",
-    "static/media/1.png": "/CAT201_TravelJom/static/media/1.2dd22ce2da9200981cd0.png",
     "static/media/KEKLOKSI.png": "/CAT201_TravelJom/static/media/KEKLOKSI.11fcd903abfb152f6fa4.png",
     "static/media/BATUFERRINGHI.png": "/CAT201_TravelJom/static/media/BATUFERRINGHI.8efcdebd4f014bda0605.png",
     "static/media/background5-01.jpg": "/CAT201_TravelJom/static/media/background5-01.df2c2cc2a36ddca4be26.jpg",
@@ -26,10 +25,10 @@
     "static/media/instagram-icon.jpeg": "/CAT201_TravelJom/static/media/instagram-icon.1fafeb219d85ffcbc9d0.jpeg",
     "index.html": "/CAT201_TravelJom/index.html",
     "main.51c7d6a0.css.map": "/CAT201_TravelJom/static/css/main.51c7d6a0.css.map",
-    "main.297ba1bc.js.map": "/CAT201_TravelJom/static/js/main.297ba1bc.js.map"
+    "main.762645cb.js.map": "/CAT201_TravelJom/static/js/main.762645cb.js.map"
   },
   "entrypoints": [
     "static/css/main.51c7d6a0.css",
-    "static/js/main.297ba1bc.js"
+    "static/js/main.762645cb.js"
   ]
 }
