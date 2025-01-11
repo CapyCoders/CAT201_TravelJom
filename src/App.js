@@ -32,20 +32,35 @@ import twitterIcon from './assets/images/icon/twitter-icon.png';
 import instagramIcon from './assets/images/icon/instagram-icon.jpeg';
 
 function StarRating({ rating }) {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  // Adjust `isMobile` when the window resizes
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div style={{ 
-      display: 'flex', 
-      justifyContent: 'center', // Center horizontally
-      alignItems: 'center',    // Center vertically if needed
-      marginBottom: '10px' 
-    }}>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center', // Center stars horizontally
+        alignItems: 'center', // Center stars vertically if needed
+        marginBottom: '10px',
+        flexDirection: 'row', // Keep stars in a row
+      }}
+    >
       {Array.from({ length: 5 }, (_, index) => (
-        <span 
-          key={index} 
+        <span
+          key={index}
           style={{
             color: index < rating ? '#FFD700' : '#CCCCCC', // Gold for filled stars, grey for empty
-            fontSize: '20px',
-            marginRight: '5px',
+            fontSize: isMobile ? '10px' : '20px', // Smaller stars on mobile
+            marginRight: '5px', // Default margin between stars
           }}
         >
           ★
@@ -939,7 +954,7 @@ const getStyles = (isMobile) => ({
     bottom: isMobile ? '5px' : '20px', // Adjust bottom spacing for smaller screens
     left: '50%',  // Adjust left spacing for smaller screens
     color: '#fff',
-    fontSize: isMobile ? '8px' : '15px', // Use slightly larger font for readability
+    fontSize: isMobile ? '5px' : '15px', // Use slightly larger font for readability
     fontFamily: '"Montserrat", sans-serif',
     fontWeight: 'bold',
     textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)', // Keep the shadow for readability
