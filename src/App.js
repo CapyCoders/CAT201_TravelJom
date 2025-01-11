@@ -11,7 +11,7 @@ import food2 from './assets/images/Images CAT/Images CAT/Food/hokkien mee.jpg';
 import food3 from './assets/images/Images CAT/Images CAT/Food/laksa penang.jpg';
 import food4 from './assets/images/Images CAT/Images CAT/Food/pasembur.jpg';
 import food5 from './assets/images/Images CAT/Images CAT/Food/nasikandar.jpg';
-import food6 from './assets/images/foods/1.png';
+
 
 import escape from './assets/images/places/ESCAPEPENANG.png';
 import street from './assets/images/places/STREETART.png';
@@ -71,10 +71,10 @@ const App = () => {
   const hotelsection = useRef(null);
   const contactsection = useRef(null);
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 800);
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', handleResize);
 
     return () => window.removeEventListener('resize', handleResize);
