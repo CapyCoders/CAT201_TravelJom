@@ -86,6 +86,15 @@ const App = () => {
   const hotelsection = useRef(null);
   const contactsection = useRef(null);
 
+  const [message, setMessage] = useState('');
+
+    useEffect(() => {
+        fetch('http://localhost:5000/api/test') // Ensure this URL matches your Node.js endpoint
+            .then((response) => response.json())
+            .then((data) => setMessage(data.message))
+            .catch((error) => console.error('Error:', error));
+    }, []);
+
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
@@ -146,7 +155,6 @@ const App = () => {
   }, []);
 
   return (
-
     <div style={styles.pageContainer}>
       {/* Header Bar */}
       <header style={styles.headerBar}>
@@ -160,6 +168,13 @@ const App = () => {
             <a href="#contact" onClick={() => scrollToSection(contactsection)} style={styles.navLink}>Contact</a>
           </nav>
       </header>
+
+      {/*check react and node connection*/}
+      
+      {/*<div>
+            <h1>React and Node.js Connection Test</h1>
+            <p>{message}</p>
+      </div>*/}
 
       {/* Main Content */}
       <div ref={homesection} style={styles.imageContainerTop}>
